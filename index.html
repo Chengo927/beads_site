@@ -1,9 +1,23 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>我的拼豆网站</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beads Editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
 </head>
 <body>
-<h1>拼豆编辑器正在开发中 🚀</h1>
+    <main class="app">
+        <h1 class="title">Beads Grid Canvas</h1>
+        <div class="controls">
+            <section class="palette" id="palette" aria-label="Color palette"></section>
+            <button type="button" class="tool" id="eraser-btn" aria-pressed="false">
+                Eraser
+            </button>
+        </div>
+        <canvas id="beads-canvas" class="canvas" aria-label="Beads grid canvas"></canvas>
+        <p class="hint">Step 1.1: canvas size matches GRID_W x GRID_H with CELL size.</p>
+    </main>
 </body>
 </html>
